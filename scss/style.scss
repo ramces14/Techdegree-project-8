@@ -1,0 +1,149 @@
+// -----------------
+// -- Base styles --
+// -----------------
+* {
+     box-sizing: border-box;
+}
+html{
+    background-color: rgb(235, 235, 235);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+}
+
+// ----------------------
+// -- Card Information --
+// ----------------------
+
+h2{
+    margin: 30px 0 20px 0;
+    font-size: 20px;
+}
+
+p{
+    font-size: 14px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1300px;
+}
+
+#main-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-gap: 30px;
+}
+
+.card{
+    border: 2px solid rgb(204, 202, 202);
+    background-color: rgb(243, 240, 240);
+    border-radius: 2%;
+    display: flex;
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: rgb(247, 247, 247);
+}
+
+.random-person{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px 20px;
+}
+
+.text-container{
+    margin: auto auto auto 0;
+}
+
+.name{
+    margin: 0 0 5px 0;
+}
+
+.email,
+.address,
+.phone,
+.date{
+    margin: 2.5px 0;
+}
+
+// -----------
+// -- Popup --
+// -----------
+
+.popup{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content/Box */
+.modal{
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 365px;
+    height: 420px;
+    border-radius: 2%;
+}
+  
+  /* The Close Button */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-random-person{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px 0 0 0;
+}
+
+.modal-text-container{
+    margin: 10px 0;
+    text-align: center;
+}
+.modal-phone{
+    margin-top: 10px;
+    margin-bottom: 7.5px;
+}
+
+
+.modal-name,
+.modal-email,
+.modal-city,
+.modal-address,
+.modal-date{
+    margin: 7.5px 0;
+}
